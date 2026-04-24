@@ -44,7 +44,7 @@ Route::get('/datoslinkpropio', [ctrlDatos::class, 'AccesoDatosVistaLinkPropio'])
 Route::get('/detalle/{id}', [ctrlDatos::class, 'detalle'])->name('tj.detalle');
 
 // CRUD web categorias y productos
-Route::resource('categories', CategoryController::class);
-Route::resource('products', ProductController::class);
+//Route::resource('categories', CategoryController::class);
+//Route::resource('products', ProductController::class);
 
 require __DIR__.'/auth.php';
